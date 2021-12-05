@@ -7,11 +7,11 @@ class Admin extends BaseController
 
     public function index()
     {
-       if (logged_in()) {
-
-          echo 'halaman admin';
-       }
-       
+      $username = 'Muhammad Dian Nafi';
+      $data = [
+         'username' => $username,
+              ];
+      return view('Admin/index', $data);       
     }
 
     public function makan()
