@@ -7,9 +7,11 @@ class Admin extends BaseController
 
     public function index()
     {
-      $username = 'Muhammad Dian Nafi';
+      $username = user()->name;
+     
       $data = [
          'username' => $username,
+         
               ];
       return view('Admin/index', $data);       
     }

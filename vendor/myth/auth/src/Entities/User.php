@@ -7,6 +7,7 @@ use Myth\Auth\Password;
 
 class User extends Entity
 {
+    protected $returnType = 'App\Entities\User';
     /**
      * Maps names used in sets and gets against unique
      * names within the class, allowing independence from
@@ -266,4 +267,5 @@ class User extends Entity
     {
         throw new \RuntimeException('User entity does not support saving permissions directly.');
 	}
+    
 }
